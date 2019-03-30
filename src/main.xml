@@ -9,4 +9,6 @@
 
 <bean id="sonncet29" class="Sonnect29"/>
 <bean id="theStage" class="Stage" factory-method="getInstance"/>
+    <bean id="ticket" class="Ticket" scope="prototype" />
+    <bean id="auditoriom" class="Auditorium" init-method="turnOnLight" destroy-method="turnOffLight" />
 </beans>
